@@ -1,0 +1,333 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.2;
+    background-color: #eeeeee;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    @media (min-width: 320px) {
+        font-size: 14px;
+    }
+    @media (min-width: 767.98px) {
+        font-size: 16px;
+    }
+    @media (min-width: 991.98px) {
+        font-size: 18px;
+    }
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #eeeeee;
+    z-index: 10;
+    height: auto;
+    display: flex;
+    @media (min-width: 320px) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (min-width: 991.98px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+#header-img {
+    padding: 5px;
+    display: block;
+    @media (min-width: 320px) {
+        height: 55px;
+        max-width: 300px;
+    }
+    @media (min-width: 991.98px) {
+        height: 75px;
+        max-width: 400px;
+    }
+}
+
+#nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav-link {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    @media (min-width: 320px) {
+        font-size: 16px;
+        padding: 30px 10px 30px 0px;
+    }
+    @media (min-width: 479.98px) {
+        font-size: 18px;
+        padding: 30px 20px 30px 0px;
+    }
+    @media (min-width: 767.98px) {
+        padding: 30px 40px 30px 0px;
+    }
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 320px) {
+        margin-top: 140px;
+    }
+    @media (min-width: 991.98px) {
+        margin-top: 100px;
+    }
+}
+
+#title {
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+    @media (min-width: 320px) {
+        font-size: 20px;
+        max-width: 300px;
+        padding: 0px 20px;
+    }
+    @media (min-width: 767.98px) {
+        max-width: 500px;
+        font-size: 30px;
+    }
+}
+
+#form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+#email {
+    border: solid 1px #777777;
+    height: 30px;
+    margin-bottom: 20px;
+    color: #777777;
+    padding-left: 10px;
+    font-size: 14px;
+    @media (min-width: 320px) {
+        width: 250px;
+    }
+    @media (min-width: 479.98px) {
+        width: 300px;
+    }
+}
+
+input::placeholder {
+    font-size: 14px;
+    color: #777777;
+}
+
+#submit {
+    background-color: #f1c40f;
+    width: 180px;
+    height: 30px;
+    font-weight: 600;
+    @media (min-width: 320px) {
+        font-size: 14px;
+    }
+    @media (min-width: 767.98px) {
+        font-size: 18px;
+    }
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.fas::before {
+    font-size: 35px;
+    color: #ff8c00;
+    margin-right: 50px;
+    @media (min-width: 320px) {
+        display: none;
+    }
+    @media (min-width: 479.98px) {
+        display: block;
+    }
+}
+
+.fas.fa-fire::before {
+    font-size: 40px;
+    margin-left: 10px;
+    margin-right: 55px;
+}
+
+.about-features {
+    @media (min-width: 320px) {
+        max-width: 300px;
+    }
+    @media (min-width: 991.98px) {
+        max-width: 700px;
+    }
+}
+
+h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    @media (min-width: 320px) {
+        font-size: 18px;
+    }
+    @media (min-width: 767.98px) {
+        font-size: 22px;
+    }
+}
+
+#how-it-works {
+    @media (min-width: 320px) {
+        margin-bottom: 40px;
+    }
+    @media (min-width: 767.98px) {
+        margin-bottom: 60px;
+    }
+    @media (min-width: 991.98px) {
+        margin-bottom: 80px;
+    }
+}
+
+#video {
+    @media (min-width: 320px) {
+        width: 300px;
+        height: 165px;
+    }
+    @media (min-width: 479.98px) {
+        width: 450px;
+        height: 250px;
+    }
+    @media (min-width: 767.98px) {
+        width: 560px;
+        height: 315px;
+    }
+}
+
+#pricing {
+    display: flex;
+    @media (min-width: 320px) {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    @media (min-width: 1600px) {
+        flex-direction: row;
+    }
+}
+
+.prices {
+    border: solid 1px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 2.5;
+    margin-bottom: 10px;
+    @media (min-width: 320px) {
+        margin: 5px;
+    }
+    @media (min-width: 1600px) {
+        margin: 10px;
+    }
+}
+
+.price {
+    margin: auto;
+    font-weight: 600;
+    @media (min-width: 320px) {
+        font-size: 18px;
+    }
+    @media (min-width: 767.98px) {
+        font-size: 22px;
+    }
+    @media (min-width: 991.98px) {
+        font-size: 24px;
+    }
+}
+
+.types-of-trombones {
+    background-color: #dddddd;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+}
+
+.select-button {
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: #f1c40f;
+    @media (min-width: 320px) {
+        font-size: 14px;
+    }
+    @media (min-width: 767.98px) {
+        font-size: 16px;
+    }
+    @media (min-width: 991.98px) {
+        font-size: 18px;
+    }
+}
+
+.informacion-of-trombones {
+    list-style: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    // box-sizing: border-box;
+    background-color: #dddddd;
+    margin: 0px auto;
+    padding: 15px 30px 15px 30px;
+    @media (min-width: 320px) {
+        width: 100%;
+        align-items: center;
+    }
+    @media (min-width: 1600px) {
+        align-items: flex-end;
+    }
+}
+
+.footer-nav {
+    color: #000000;
+    line-height: 1.5;
+    padding: 20px 10px;
+    text-decoration: none;
+    @media (min-width: 320px) {
+        font-size: 14px;
+    }
+    @media (min-width: 991.98px) {
+        font-size: 18px;
+    }
+}
+
+span {
+    color: #777777;
+    @media (min-width: 320px) {
+        font-size: 12px;
+    }
+    @media (min-width: 767.98px) {
+        font-size: 14px;
+    }
+}
